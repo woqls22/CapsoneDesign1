@@ -23,5 +23,5 @@
 				GUI 코드를 작성하여 라벨링하는 프로그램 구성 예정, 추후 라벨링 작업 진행 예정
 ![Cropped1](./src/Cropped1.jpg)
 ![Cropped2](./src/Cropped2.jpg)
-![Cropped3](./src/Date_set.jpg)
+![Cropped3](./src/Data_set.jpg)
 
