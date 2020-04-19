@@ -24,3 +24,4 @@ dist_electron/win-unpacked 폴더에서 image-labeller.exe를 실행.
 * 참고 사항
     * 실제로 라벨링은 숫자 6자리로 변환됨. (hasNum, digitLen, digit1, digit2, digit3, digit4)
     * 아무것도 입력하지 않고 다음 이미지 로딩 시 [0, 0, 10, 10, 10, 10]으로 자동 라벨링됨.
+![img1](./src/img1.png)
