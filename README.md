@@ -11,5 +11,9 @@
   * 이재빈
   * 김명현
 
+### 프로젝트 폴더 구성
+* VideoProcessingModule : 실시간 영상에서 명패 등 오브젝트를 검출, Crop하여 이미지를 추출하는 모듈
+* ImageLabeller : Crop된 명패 이미지를 수작업으로 Labelling하는 것을 도와주는 툴.
+
 ### 수정 내역
  * [ 20.04.02 20:13 ] khuhub에서 옮겨옴.
