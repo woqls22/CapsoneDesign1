@@ -14,6 +14,7 @@
     * HumanDetection Module : HOG Descriptor 사용, 사람객체 인식 구현 완료. 추후 프레임을 섹션별로 나누어 객체의 위치 추정.
 			[04.16] 객체 위치 파악, 회피 동선 화면 표시 구현 완료
 			[04.22] Object Detect 결과값 1차원 인덱스로 전달, 오브젝트가 차지하지 않는 부분의 인덱스값 증가기능 구현계획
+			[04.23] 라즈베리파이 카메라 장착, 해상도 320*240으로 결정 - Human Detection모듈
 ![Avoidimg1](./src/Avoiding_1.jpg)
 ![Avoidimg2](./src/Avoiding_2.jpg)
     
