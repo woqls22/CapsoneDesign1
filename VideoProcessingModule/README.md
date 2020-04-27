@@ -15,6 +15,7 @@
 			[04.16] 객체 위치 파악, 회피 동선 화면 표시 구현 완료
 			[04.22] Object Detect 결과값 1차원 인덱스로 전달, 오브젝트가 차지하지 않는 부분의 인덱스값 증가기능 구현계획
 			[04.23] 라즈베리파이 카메라 장착, 해상도 320*240으로 결정 - Human Detection모듈
+			[04.28] HumanDetection모듈,  1차원배열(길이10)을 통해 감지된 물체의 위치값표현
 ![Avoidimg1](./src/Avoiding_1.jpg)
 ![Avoidimg2](./src/Avoiding_2.jpg)
     
