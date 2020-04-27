@@ -9,9 +9,18 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 cv2.startWindowThread()
 fname = "./croppedimg/human/"
 # open webcam video stream
-cap = cv2.VideoCapture(
-    0)
+cap = cv2.VideoCapture(0)
 i = 0
+weight_list = [0,0,0,0,0,0,0,0,0,0]
+def check_obstacle(weight_list, xA, xB):
+    for i in range(0, len(weight_list)):
+        weight_list[i] = 0
+    xA = int(xA/32)
+    xB = int(xB/32)
+    for i in range(xA, xB+1):
+        if(weight_list[i]==0):
+            weight_list[i] = weight_list[i]-1
+    return weight_list
 def draw_left_path(img,x,y,w,h):
     start_point = x+w
     cv2.line(img, (160-2*w,240), (start_point, y+int(h)), (255,0,0), 8) #4픽셀 선 그리기
@@ -47,6 +56,7 @@ while (True):
         # display the detected boxes in the colour picture
         cv2.rectangle(frame, (xA, yA), (xB, yB),
                       (0, 255, 0), 2)
+        hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
         cv2.putText(frame, "Detect", (xA - 50, yA - 10), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 1)
         detectCount = detectCount+1
         if(detectCount>1):
@@ -74,6 +84,7 @@ while (True):
                 except:
                     pass
                 print("Center Side Detect")
+            print(check_obstacle(weight_list,xA, xB))
        # s = fname + str(i)+'.jpg'
        # cv2.imwrite(s, cropped) # IMG File Write
         print("time :", time.time() - start)
